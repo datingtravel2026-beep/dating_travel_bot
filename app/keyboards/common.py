@@ -7,13 +7,13 @@ def subscription_kb():
             [
                 InlineKeyboardButton(
                     text="📢 Канал",
-                    url="https://t.me/your_channel"
+                    url="https://t.me/DatingTravel"
                 )
             ],
             [
                 InlineKeyboardButton(
                     text="💬 Чат",
-                    url="https://t.me/your_chat"
+                    url="https://t.me/DatingTravelChat"
                 )
             ],
             [
