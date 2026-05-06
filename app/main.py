@@ -2,11 +2,17 @@ import asyncio
 
 from app.config.loader import dp, bot
 from app.handlers import start, registration
+from app.handlers import start, registration, subscription
 
 
 async def main():
-    dp.include_router(start.router)
-    dp.include_router(registration.router)
+  dp.include_router(start.router)
+  dp.include_router(subscription.router)
+  dp.include_router(registration.router)
+
+    
+    
+
     
  # 💥 фикс конфликта
     await bot.delete_webhook(drop_pending_updates=True)
